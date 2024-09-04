@@ -18,9 +18,9 @@ jobs:
         with:
           java-version: '11'
           distribution: 'adopt'
-
+        
       - name: Install Maven dependencies
-        run: mvn install
-
+        run: mvn install -DskipTests
+      
       - name: Run test
         run: mvn test
